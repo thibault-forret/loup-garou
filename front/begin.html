@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancer une Partie - Loups-Garous</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1 class="game-title">Lancer une Partie</h1>
+        <label class="player-label">Nombre de joueurs :</label>
+        <input type="range" min="5" max="10" value="5" class="player-slider" id="playerRange">
+        <div class="player-count" id="playerCount">5 Joueurs</div>
+        <button class="start-button">Démarrer la Partie</button>
+    </div>
+
+    <script>
+        const playerRange = document.getElementById("playerRange");
+        const playerCount = document.getElementById("playerCount");
+
+        playerRange.addEventListener("input", function() {
+            playerCount.textContent = this.value + " Joueurs";
+        });
+    </script>
+
+</body>
+</html>
