@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Clock from "./Clock";
 import Player from "./Player";
 import Action from "./Action";
+import Board from "./Board";
 import "../game.css";
 import backgroundDay from "../assets/images/background-day.png";
 import backgroundNight from "../assets/images/background-night-2.png";
@@ -28,9 +29,8 @@ function Jeu() {
             <Clock />
             <Player role={playerRole}/>
             <Action message="Les loups-garous se réveillent. Ils votent pour éliminer un innocent." />
-            
+            <Board />
         </div>
-        
     );
 }
 

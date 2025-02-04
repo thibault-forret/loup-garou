@@ -1,44 +1,27 @@
-<div class="player-table">
-<table>
-    <tr>
-        <th>Nom du Joueur</th>
-        <th>Statut</th>
-    </tr>
-    <tr>
-        <td>Hugo</td>
-        <td><div class="status-icon" onclick="toggleEliminated(this)"></div></td>
-    </tr>
-    <tr>
-        <td>Morgane</td>
-        <td><div class="status-icon"></div></td>
-    </tr>
-    <tr>
-        <td>LoupNoir</td>
-        <td><div class="status-icon"></div></td>
-    </tr>
-    <tr>
-        <td>OmbreSilencieuse</td>
-        <td><div class="status-icon"></div></td>
-    </tr>
-    <tr>
-        <td>Hugo</td>
-        <td><div class="status-icon"></div></td>
-    </tr>
-    <tr>
-        <td>Morgane</td>
-        <td><div class="status-icon"></div></td>
-    </tr>
-    <tr>
-        <td>LoupNoir</td>
-        <td><div class="status-icon"></div></td>
-    </tr>
-    <tr>
-        <td>OmbreSilencieuse</td>
-        <td><div class="status-icon"></div></td>
-    </tr>
-</table>
-</div>
+import React from 'react';
+import BoardItem from './BoardItem';
 
-function toggleEliminated(element) {
-    element.classList.toggle('eliminated');
+function Board() {
+    return (
+        <div className="player-table">
+            <table>
+                <tbody> 
+                    <tr>
+                        <th>Nom du Joueur</th>
+                        <th>Statut</th>
+                    </tr>
+                    <BoardItem name="Hugo" />
+                    <BoardItem name="Morgane" />
+                    <BoardItem name="LoupNoir" />
+                    <BoardItem name="OmbreSilencieuse" />
+                    <BoardItem name="Hugo" />
+                    <BoardItem name="Morgane" />
+                    <BoardItem name="LoupNoir" />
+                    <BoardItem name="OmbreSilencieuse" />
+                </tbody>
+            </table>
+            </div>
+    );
 }
+
+export default Board;
