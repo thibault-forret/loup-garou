@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Clock from "./Clock";
+import Player from "./Player";
 import "../game.css";
 import backgroundDay from "../assets/images/background-day.png";
 import backgroundNight from "../assets/images/background-night-2.png";
 
 function Jeu() {
     const [backgroundImage, setBackgroundImage] = useState(backgroundDay);
+
+    const playerRole = "chasseur";
 
     useEffect(() => {
         const updateBackground = () => {
@@ -22,6 +25,7 @@ function Jeu() {
     return (
         <div className="background" style={{ backgroundImage: `url(${backgroundImage})`}}>
             <Clock />
+            <Player role={playerRole}/>
         </div>
         
     );

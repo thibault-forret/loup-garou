@@ -224,7 +224,7 @@ button {
     left: 10px;
     width: 185px; /* Largeur de 30% de l'écran */
     height: 185px; /* Hauteur de 40% de l'écran */
-    background: url('/src/assets/images/hunter.webp') no-repeat center center;
+    background: url('/src/assets/images/chasseur.webp') no-repeat center center;
     background-size: cover;
     border: 3px solid #5A3E1B; /* Bordure en bois */
     border-radius: 15px;
@@ -262,10 +262,10 @@ button {
 }
 
 /* Icônes spécifiques */
-.icon-werewolf { background-image: url('/src/assets/images/icons/crown.jpg'); }
-.icon-villager { background-image: url('/src/assets/images/icons/heart.jpg'); }
-.icon-seer { background-image: url('/src/assets/images/icons/potion_m.jpg'); }
-.icon-hunter { background-image: url('/src/assets/images/icons/potion_v.jpg'); }
+.icon-crown { background-image: url('/src/assets/images/icons/crown.jpg'); }
+.icon-heart { background-image: url('/src/assets/images/icons/heart.jpg'); }
+.icon-potion-m { background-image: url('/src/assets/images/icons/potion_m.jpg'); }
+.icon-potion-v { background-image: url('/src/assets/images/icons/potion_v.jpg'); }
 
 /* Zone du tableau des joueurs */
 .player-table {
