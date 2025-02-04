@@ -1,4 +1,11 @@
-<div class="container">
-    <p>Infos ...</p>
-    <p>Et une autre ligne</p>
-</div>
+import React from 'react';
+
+function Action({ message }) {
+    return (
+        <div className="container">
+            <p>{message}</p>
+        </div>
+    );
+}
+
+export default Action;
